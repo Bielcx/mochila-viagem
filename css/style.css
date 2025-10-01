@@ -130,3 +130,48 @@ html {
     font-weight: 400;
 }
 
+
+/* ...existing code... */
+
+/* Adicione esta seção ao final do arquivo CSS */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .conteudo {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 2em 1em;
+        gap: 1em;
+    }
+
+    .principal {
+        min-width: auto; /* Remove a largura mínima */
+        width: 100%; /* Ajusta para ocupar toda a largura */
+        padding: 2em 1em;
+        flex-direction: column; /* Empilha os elementos dentro da principal */
+        gap: 1em;
+    }
+
+    .mochila {
+        margin: 0 auto; /* Centraliza a mochila */
+        min-width: 120px; /* Ajusta o tamanho da mochila */
+        max-width: 120px;
+        height: 140px;
+    }
+
+    .adicionar input {
+        font-size: 1em; /* Ajusta o tamanho da fonte */
+        padding: 0.8em; /* Reduz o padding */
+    }
+
+    .item {
+        font-size: 16px; /* Reduz o tamanho da fonte dos itens */
+        padding: 0.5em 1em;
+    }
+
+    .item strong {
+        width: 30px; /* Ajusta o tamanho do círculo */
+        height: 30px;
+    }
+}
